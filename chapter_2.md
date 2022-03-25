@@ -121,3 +121,28 @@ x ^ 0xFF
 /* C */
 x & ~0xFF
 ```
+
+## 2.12
+```cpp
+int bis(int x, int m) {
+    int result = x | m;
+    return result;
+}
+
+int bic(int x, int m) {
+    int result = x & m; // 答案是 x & ~m 迷惑
+    return result;
+}
+```
+## 2.13
+x = 0x66,y = 0x93
+|表达式|结果|
+|-----|----|
+|x & y|  0x02  |
+|x \| y|  0xF7   |
+|~x \| ~y| 0xFD     |
+|x & !y|   0x00  |
+|x && y|  0x01   |
+|x \|\| y|  0x01   |
+|!x \|\| !y|   0x00   |
+|x && ~y|  0x01    |
