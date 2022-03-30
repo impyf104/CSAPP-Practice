@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+#include<unordered_map>
 typedef unsigned char *byte_pointer;
 
 void show_bytes(byte_pointer start, int len) {
@@ -47,8 +47,19 @@ int sum(int x, int y) {
 }
 
 int main() {
+    
     char *s = "12345";
     show_bytes((byte_pointer) &s, 6);
     return 0;
 }
 
+
+
+
+vector<int> getKeys(unordered_map<int, int> m) {
+    vector<int> res;
+    for (auto p: m) {
+        
+    }
+    return res;
+}
